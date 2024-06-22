@@ -26,7 +26,7 @@ function Contact({ data, onContactClick, onDelete, onUnread }) {
           onClick={() => onContactClick(user)}
           className='chatuser'
         >
-          <img src={user.profilePictureURL} />
+          <img src={user.profilePictureURL} alt={user.name}/>
           <div className='details'>
             <h3>{user.name}</h3>
             <p>{Object.values(user.chat[user.chat.length - 1]).pop().message}</p>
