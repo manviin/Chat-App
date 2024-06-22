@@ -14,7 +14,7 @@ function App() {
     if (!contacts.find(user => user.userId === activeUser?.userId)) {
       setActiveUser(null);
     }
-  }, [contacts]);
+  }, [contacts,activeUser]);
 
   //  setting unreadCount to 0 for the selected user
   function handleContactClick(user) {
