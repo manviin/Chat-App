@@ -1,0 +1,290 @@
+/* Layout for App.js*/
+.boxes {
+  display: flex;
+}
+
+/* Styling for the chatbox container */
+.chatbox {
+  margin-top: 0;
+  margin-right: 20px;
+  min-width: 500px;
+  height: 800px;
+  background-color: white;
+  box-shadow: 5px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* Chatbox header */
+.chatbox h2 {
+  margin-bottom: 20px
+}
+
+/* Styling for each chat user entry */
+.chatuser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8px;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Chat user profile image */
+.chatuser img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 5px;
+}
+
+/* More options icon */
+.chatuser span {
+  margin-left: 100px;
+  margin-right: 0;
+  margin-top: 0;
+  padding-top: 0;
+  color: #1e90ff;
+}
+
+/* Hover effect for chat users */
+.chatuser:hover {
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Chat user details */
+.details {
+  margin-left: 10px;
+  margin-top: 10px;
+  flex: 1;
+}
+
+/* Chat user name and last message */
+.details h3,
+.details p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* Styling for last message text */
+.details p {
+  color: gray;
+  font-weight: 300;
+}
+
+/* Unread message count */
+.unread-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* Modal Styling */
+.modal {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 350px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Options within the modal */
+.modal p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Hover effect for modal options */
+.modal p:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+/* Styling for the conversation container */
+.conversation {
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* Header of the conversation*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+}
+
+/* User info in the conversation header */
+.userInfo {
+  display: flex;
+  width: auto;
+  align-items: center;
+  margin-right: 8px;
+}
+
+/* Cursor change  */
+.userInfo h3:hover {
+ cursor: pointer;
+}
+
+/* user image in conversation header */
+.userInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 5px;
+}
+
+/* Cursor change for user image */
+.userInfo img:hover {
+  cursor: pointer;
+}
+
+/* Icons in the conversation header */
+.icons {
+  display: flex;
+}
+
+/* Styling for icons */
+.icons span {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #1e90ff;
+}
+
+/* Hover effect for icons */
+.icons span:hover {
+  cursor: pointer;
+}
+
+/* Styling for messages area */
+.msg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling for messages for sender and receiver */
+.user,
+.me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+/* Styling for user's own messages */
+.user {
+  align-self: flex-end;
+  background-color: #d1e7dd;
+  text-align: right;
+}
+
+/* Styling for received messages */
+.me {
+  align-self: flex-start;
+  background-color: #f8d7da;
+  text-align: left;
+}
+
+/* Message text */
+.user h3,
+.me h3 {
+  margin: 0;
+  word-break: break-word;
+  font-size: medium;
+}
+
+/* Timestamp text */
+.user p,
+.me p {
+  margin: 5px 0 0 0;
+  font-size: 0.8rem;
+}
+
+/* Styling for message input box */
+.msgbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Icon styling in message input box */
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* Icon size in message input box */
+.icon span {
+  font-size: 24px;
+}
+
+/* Input box styling */
+.inputbox {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 20%;
+}
+
+/* Styling input field */
+.inputbox input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 20%;
+  font-size: 16px;
+}
+
+/* Send icon styling */
+.inputbox span {
+  font-size: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
